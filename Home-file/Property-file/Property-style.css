@@ -1,0 +1,370 @@
+@import url(../Assets/Fonts-file/Satoshi_Complete/Fonts/WEB/css/satoshi.css);
+
+:root {
+  --dark-gray-color: #18181b;
+  --white-color: #fcfcfc;
+  --paragraph-color: #70707b;
+  --hero-txt-color: #ffffff;
+  --button-color: #fcfcfc;
+  --heading-Size1-104px: 6.5rem;
+  --heading-Size2-64px: 4rem;
+  --heading-Size3-52px: 3.25rem;
+  --heading-Size4-48px: 3rem;
+  --heading-Size5-40px: 2.5rem;
+  --heading-Size6-32px: 2rem;
+  --heading-Size7-24px: 1.7rem;
+  --Body-XLarge-20px: 1.25rem;
+  --Body-Large-18px: 1.125rem;
+  --Body-Medium-16px: 1rem;
+  --Body-small-14px: 0.875rem;
+  --Body-XSmall-12px: 0.75rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Satoshi", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+.Total-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Total header section start  */
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.1875rem 5rem;
+}
+.logo-img {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 108px;
+  height: 32px;
+}
+.logo-img img {
+  width: 100%;
+  height: 100%;
+}
+.navigation-bar ul {
+  display: flex;
+}
+.navigation-bar ul li a {
+  font-size: var(--Body-small-14px);
+  padding: 0.25rem 0.75rem;
+  text-wrap: nowrap;
+  color: var(--paragraph-color);
+}
+.navigation-bar ul li a:hover {
+  color: rgb(105, 246, 105);
+  font-weight: 900;
+  background-color: transparent;
+  border-bottom: 4px solid green;
+  opacity: 85%;
+  /* border-radius: 12px; */
+  transition: 0.3s smooth;
+}
+.nav-button button {
+  height: 2.8125rem;
+  width: 7.3125rem;
+  border-radius: 0.75rem;
+  background-color: var(--dark-gray-color);
+  border: none;
+}
+.nav-button button a {
+  color: var(--button-color);
+}
+.nav-button button:hover {
+  background-color: var(--paragraph-color);
+}
+.nav-button button a:hover {
+  color: rgb(105, 246, 105);
+}
+/* Total header section ends  */
+
+/* Main Content area starts from here  */
+/* Section 1 starts  */
+.section-1 {
+  padding: 80px 80px 56px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: first baseline;
+}
+.section-1 .left h1 {
+  font-size: var(--heading-Size2-64px);
+  color: var(--dark-gray-color);
+  line-height: 1.2;
+}
+.section-1 .right p {
+  font-size: var(--Body-Large-18px);
+  color: var(--paragraph-color);
+  line-height: 1.55;
+}
+/* Section 1 ends  */
+
+/* Section 2 starts  */
+.section-2 {
+  margin: 0 80px 40px 80px;
+}
+
+.section-2 .search-bar input {
+  width: 100%;
+  height: 57px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.55;
+  border: 1px solid #e4e4e7;
+  border-radius: 12px;
+  padding: 16px;
+  /* display: flex;
+        align-items:first baseline;
+        justify-content: center; */
+}
+.section-2 .search-bar input::placeholder {
+  background-image: url(/Assets/Property/search\ 1.svg);
+  background-repeat: no-repeat;
+  height: 100%;
+  padding-left: 20px;
+  background-size: 1.2rem;
+  /* align-items: center; */
+}
+/* Section 2 ends   */
+
+/* section-3 starts  */
+.section-3 {
+  margin: 0 80px 80px 80px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.section-3 .left {
+  width: 29.375%;
+}
+/* Button part starts  */
+.section-3 .left .sell-rent-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #e4e4e7;
+  padding: 12px;
+  border-radius: 12px;
+}
+.section-3 .left .sell-rent-wrapper .sell-btn button {
+  width: 176px;
+  height: 45px;
+  border-radius: 12px;
+  border: none;
+  background-color: var(--dark-gray-color);
+  color: var(--hero-txt-color);
+  padding: 10px 75px;
+}
+.section-3 .left .sell-rent-wrapper .sell-btn button:hover {
+  background-color: #70707b;
+  color: #18181b;
+}
+
+.section-3 .left .sell-rent-wrapper .rent-btn button {
+  width: 176px;
+  height: 45px;
+  border-radius: 12px;
+  border: none;
+  background-color: transparent;
+  color: var(--dark-gray-color);
+  padding: 10px 75px;
+  opacity: 100%;
+}
+.section-3 .left .sell-rent-wrapper .rent-btn button:hover {
+  background-color: #70707b;
+  color: #18181b;
+}
+/* Button part ends  */
+
+/* Catagory part starts  */
+.section-3 .left .category{
+    margin-top: 24px;
+}
+.section-3 .left .category h3{
+    font-size: var(--Body-XLarge-20px);
+    /* font-weight:; */
+}
+.section-3 .left .category .item-1{
+    margin-top: 16px;
+    font-size:20px;
+    color: #18181b;
+    font-weight: 100;
+    margin-left: 4px;
+}
+.section-3 .left .category .item-1 input{
+    transform: scale(1.5);
+    margin-right: 8px;
+}
+.section-3 .left .category .item-2{
+    margin-top: 16px;
+    font-size:20px;
+    color: #18181b;
+    font-weight: 100;
+    margin-left: 4px;
+}
+.section-3 .left .category .item-2 input{
+    transform: scale(1.5);
+    margin-right: 8px;
+}
+.section-3 .left .category .item-3{
+    margin-top: 16px;
+    font-size:20px;
+    color: #18181b;
+    font-weight: 100;
+    margin-left: 4px;
+}
+.section-3 .left .category .item-3 input{
+    transform: scale(1.5);
+    margin-right: 8px;
+}
+/* Catagory part ends  */
+/* Location part starts  */
+.section-3 .left .location {
+    margin-top: 24px;
+}
+.section-3 .left .location h3{
+    font-size: var(--Body-XLarge-20px);
+}
+.section-3 .left .location .item-1{
+    margin-top: 16px;
+    font-size:20px;
+    color: #18181b;
+    font-weight: 100;
+    margin-left: 4px;
+}
+.section-3 .left .location .item-1 input{
+    transform: scale(1.5);
+    margin-right: 8px;
+}
+.section-3 .left .location .item-2{
+    margin-top: 16px;
+    font-size:20px;
+    color: #18181b;
+    font-weight: 100;
+    margin-left: 4px;
+}
+.section-3 .left .location .item-2 input{
+    transform: scale(1.5);
+    margin-right: 8px;
+}
+.section-3 .left .location .item-3{
+    margin-top: 16px;
+    font-size:20px;
+    color: #18181b;
+    font-weight: 100;
+    margin-left: 4px;
+}
+.section-3 .left .location .item-3 input{
+    transform: scale(1.5);
+    margin-right: 8px;
+}
+.section-3 .left .location .item-4{
+    margin-top: 16px;
+    font-size:20px;
+    color: #18181b;
+    font-weight: 100;
+    margin-left: 4px;
+}
+.section-3 .left .location .item-4 input{
+    transform: scale(1.5);
+    margin-right: 8px;
+}
+.section-3 .left .location .item-5{
+    margin-top: 16px;
+    font-size:20px;
+    color: #18181b;
+    font-weight: 100;
+    margin-left: 4px;
+}
+.section-3 .left .location .item-5 input{
+    transform: scale(1.5);
+    margin-right: 8px;
+}
+/* Location part ends  */
+/* Price range part starts  */
+.section-3 .left .price-range{
+    margin-top: 24px;
+}
+.section-3 .left .price-range h3{
+    font-size: var(--Body-XLarge-20px);
+}
+.section-3 .left .price-range .range-volume{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  margin-top:27px;
+  background-color: #f4f4f4;
+}
+.section-3 .left .price-range .range-volume .custom-range{
+    -webkit-appearance: none; 
+  width: 100%; /* Slider width */
+  height: 2px; /* Track thickness */
+  background: #000; /* Black track color */
+  border-radius: 5px; /* Slightly rounded track */
+  outline: none;
+}
+.custom-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px; /* Handle size */
+    height: 20px;
+    background: #fff; /* White handle color */
+    border: 2px solid #ccc; /* Handle border */
+    border-radius: 50%; /* Circular shape */
+    cursor: pointer;
+  }
+  .section-3 .left .price-range .range-volume .custom-range::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+  }  
+/* Price range part ends  */
+.section-3 .left  .value-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:1rem;
+}
+.section-3 .left  .value-price p{
+    color: var(--paragraph-color);
+}
+.section-3 .left  .value-price span{
+    color: var(--dark-gray-color);
+    font-weight: 600;
+}
+/* left part  ends  */
+
+/* Right part starts */
+.section-3 .right {
+    width: 67.5%;
+    background-color: #70707b;
+}
+
+/* Right part ends  */
+
+
+
+
+/* section-3 ends  */
+
+/* Main Content area Ends  here  */
